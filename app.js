@@ -13,7 +13,7 @@ if( !config.PORT){
 //one process to one port.
 //port should not be hardcoded.
 
-app.use( express.static(_dirname + 'public') );
+app.use( express.static(__dirname + 'public') );
 
 var currentCount = 0;
 
